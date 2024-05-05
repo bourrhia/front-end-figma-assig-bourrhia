@@ -11,6 +11,7 @@ const ComingSoon: NextPage = () => {
         imagePlaceholder="/0-1-1@2x.png"
         launchingInTheSecondHalfO="Set to debut in the latter half of 2024, the CREON token serves as the pioneering link between cutting-edge AI initiatives and blockchain technology. This innovative token provides NFT and token holders with unparalleled access to our Launchpad, AI tools, and exclusive pre-launch investment prospects."
       />
+      
       <Token
         token="revenue"
         empoweringNFTHoldersAndSh="Driving income and growth through decentralization"
