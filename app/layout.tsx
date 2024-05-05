@@ -1,8 +1,53 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local'
 
-const inter = Inter({ subsets: ["latin"] });
+const MonumentExtended = localFont({
+  src: '../public/MonumentExtended-Regular.woff2',
+  display: 'swap',
+  variable: '--font-MonumentExtended',
+})
+
+const SatoshiRegular = localFont({
+  src: '../public/Satoshi-Regular.woff2',
+  display: 'swap',
+  weight: '400',
+  variable: '--font-SatoshiRegular',
+})
+
+const SatoshiMedium = localFont({
+  src: '../public/Satoshi-Medium.woff2',
+  display: 'swap',
+  weight: '500',
+  variable: '--font-SatoshiMedium ',
+})
+
+const SatoshiBold = localFont({
+  src: '../public/Satoshi-Bold.woff2',
+  display: 'swap',
+  weight: '700',
+  variable: '--font-SatoshiBold'
+})
+
+
+const Satoshi = localFont({
+  src: [
+    {
+      path: '../public/Satoshi-Regular.woff2',
+      weight: '400',
+    },
+    {
+      path: '../public/Satoshi-Medium.woff2',
+      weight: '500',
+    },
+    {
+      path: '../public/Satoshi-Bold.woff2',
+      weight: '700',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-Satoshi',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +61,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+     
+     <body className={`${MonumentExtended.variable} ${Satoshi.variable}`}>{children}</body>
+    
     </html>
   );
 }
