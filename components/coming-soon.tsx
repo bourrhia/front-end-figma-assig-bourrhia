@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Token from "./token";
 
+
 const ComingSoon: NextPage = () => {
   return (
     <div className="w-[1920px] overflow-x-auto flex flex-row items-start justify-start pt-[156px] px-60 pb-[155px] box-border gap-[40px] max-w-full text-center text-xs text-black font-satoshi max-w-[925px]:gap-[20px] max-w-[925px]:py-[66px] max-w-[925px]:px-[60px] max-w-[925px]:box-border max-w-[1350px]:py-[101px] max-w-[1350px]:px-[120px] max-w-[1350px]:box-border">
