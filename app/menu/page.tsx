@@ -11,7 +11,7 @@ const Menu: NextPage = () => {
 
     const handleCloseMenu = () => {
         try {
-          router.push("/");
+          router.back();
         } catch (err) {
           console.error("An error occurred while opening menu: ", err);
         } finally {
@@ -71,19 +71,19 @@ const Menu: NextPage = () => {
       <b className="absolute !m-[0] top-[156px] right-[133px] leading-[110%] inline-block z-[5]">
         Token
       </b>
-      <div className="!m-[0] absolute top-[156px] right-[91px] rounded-81xl bg-black overflow-hidden flex flex-row items-start justify-start pt-0.5 px-1 pb-px z-[5] text-3xs text-purple">
+      <div className="!m-[0] absolute top-[156px] right-[75px] rounded-81xl bg-black overflow-hidden flex flex-row items-start justify-start pt-0.5 px-1 pb-px z-[5] text-3xs text-purple">
         <b className="relative leading-[110%]">SOON</b>
       </div>
       <b className="absolute !m-[0] top-[206px] right-[102px] leading-[110%] inline-block z-[5]">
         AI Income
       </b>
-      <div className="!m-[0] absolute top-[206px] right-[60px] rounded-81xl bg-black overflow-hidden flex flex-row items-start justify-start pt-0.5 px-1 pb-px z-[5] text-3xs text-purple">
+      <div className="!m-[0] absolute top-[206px] right-[45px] rounded-81xl bg-black overflow-hidden flex flex-row items-start justify-start pt-0.5 px-1 pb-px z-[5] text-3xs text-purple">
         <b className="relative leading-[110%]">SOON</b>
       </div>
       <b className="absolute !m-[0] top-[256px] right-[75px] leading-[110%] inline-block z-[5]">
         AI Launchpad
       </b>
-      <div className="!m-[0] absolute top-[256px] right-[33px] rounded-81xl bg-black overflow-hidden flex flex-row items-start justify-start pt-0.5 px-1 pb-px z-[5] text-3xs text-purple">
+      <div className="!m-[0] absolute top-[256px] right-[15px] rounded-81xl bg-black overflow-hidden flex flex-row items-start justify-start pt-0.5 px-1 pb-px z-[5] text-3xs text-purple">
         <b className="relative leading-[110%]">SOON</b>
       </div>
       <header className="self-stretch overflow-hidden flex flex-row items-start justify-between gap-[20px] z-[5] text-left text-base text-white font-satoshi">

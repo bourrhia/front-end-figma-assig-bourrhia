@@ -57,10 +57,10 @@ const Header: NextPage = () => {
               </div>
             </div>
             <div className="flex flex-row items-start justify-start gap-[4px]">
-              <b className="relative leading-[20px] inline-block min-w-[116px] whitespace-nowrap">
+              <b className=" relative leading-[20px] inline-block min-w-[116px] whitespace-nowrap">
                 AI Launchpad
               </b>
-              <div className="rounded-81xl bg-black overflow-hidden flex flex-row items-center justify-center pt-0.5 px-1 pb-px text-3xs text-purple">
+              <div className=" rounded-81xl bg-black overflow-hidden flex flex-row items-center justify-center pt-0.5 px-1 pb-px text-3xs text-purple">
                 <b className="relative leading-[110%] inline-block min-w-[30px]">
                   SOON
                 </b>
