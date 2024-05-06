@@ -1,11 +1,28 @@
+"use client";
+
+import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import type { NextPage } from "next";
 
 const Header: NextPage = () => {
+  const router = useRouter();
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleOpenMenu = () => {
+    try {
+      router.push("/menu");
+    } catch (err) {
+      console.error("An error occurred while opening menu: ", err);
+    } finally {
+      
+    }
+  };
+
   return (
     <div className="flex-1 flex flex-row items-end justify-between max-w-full gap-[20px] z-[3] text-center text-lg text-white font-satoshi">
-      <div className="w-[140px] flex flex-col items-start justify-end pt-0 px-0 pb-0.5 box-border">
+      <div className="w-[20px] sm:w-[140px] lex flex-col items-start justify-end pt-0 px-0 pb-0.5 box-border">
         <img
-          className="lg:self-stretch h-[39px] relative lg:max-w-full overflow-hidden shrink-0"
+          className="  sm:self-auto  sm:max-w-none h-[39px] relative  overflow-hidden shrink-0"
           loading="lazy"
           alt=""
           src="/logo.svg"
@@ -51,14 +68,15 @@ const Header: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className="h-11 w-[132px] rounded-md box-border overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[11px] px-7 pb-[13px] gap-[13px] border-[2px] border-solid border-white   lg:hidden">
-          <b className="relative leading-[20px] inline-block min-w-[72px] shrink-0 [debug_commit:1de1738]">
+        <button 
+        className="cursor-pointer bg-[transparent] mr-2 h-11 w-auto sm:w-[132px]rounded-md box-border overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[11px] px-1 sm:px-7 pb-[13px] gap-[13px] border-[2px] border-solid border-white   lg:hidden"
+        onClick={handleOpenMenu}
+        >
+          <b className="text-white text-[0.875rem] sm:text-base relative leading-[20px] inline-block min-w-[72px] shrink-0 [debug_commit:1de1738]">
             Connect
           </b>
-          <b className="w-[72px] h-5 relative leading-[110%] inline-block shrink-0 [debug_commit:1de1738]">
-            Connect
-          </b>
-        </div>
+          
+        </button>
       </div>
     </div>
   );

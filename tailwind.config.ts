@@ -64,9 +64,13 @@ const config: Config = {
     mq450: {
       raw: "screen and (max-width: 450px)",
     },
+
+    
+    
    
     
   },
+  
   corePlugins: {
     preflight: false,
   },

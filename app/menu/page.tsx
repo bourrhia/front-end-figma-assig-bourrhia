@@ -1,6 +1,23 @@
+"use client";
+
 import type { NextPage } from "next";
+import React from "react";
+import { useRouter } from "next/navigation";
+
+
 
 const Menu: NextPage = () => {
+    const router = useRouter();
+
+    const handleCloseMenu = () => {
+        try {
+          router.push("/");
+        } catch (err) {
+          console.error("An error occurred while opening menu: ", err);
+        } finally {
+          
+        }
+      };
   return (
     <div className="w-full relative bg-black overflow-hidden flex flex-col items-start justify-start pt-5 px-[15px] pb-[754px] box-border leading-[normal] tracking-[normal] text-center text-base text-white font-satoshi">
       <main className="w-full h-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] overflow-hidden max-w-full">
@@ -84,7 +101,9 @@ const Menu: NextPage = () => {
               Connect
             </b>
           </button>
-          <div className="h-[38px] w-[38px] relative">
+          <a className="h-[38px] w-[38px] relative"
+          onClick={handleCloseMenu}
+          >
             <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-md bg-blue" />
             <img
               className="absolute h-[31.58%] w-[31.58%] top-[34.21%] right-[34.21%] bottom-[34.21%] left-[34.21%] max-w-full overflow-hidden max-h-full z-[1]"
@@ -92,11 +111,11 @@ const Menu: NextPage = () => {
               alt=""
               src="/vector-82.svg"
             />
-          </div>
+          </a>
         </div>
         <div className="h-[33px] w-[107px] relative hidden">
           <div className="absolute top-[-3.03%] left-[0%] leading-[110%] font-medium">
-            0x24Db...3e10    
+            0x24Db...3e10
           </div>
           <div className="absolute top-[60.61%] left-[0%] text-xs leading-[110%] font-medium text-grey-text">
             Disconnect

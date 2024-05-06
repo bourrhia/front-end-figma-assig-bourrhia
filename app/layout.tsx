@@ -8,26 +8,7 @@ const MonumentExtended = localFont({
   variable: '--font-MonumentExtended',
 })
 
-const SatoshiRegular = localFont({
-  src: '../public/Satoshi-Regular.woff2',
-  display: 'swap',
-  weight: '400',
-  variable: '--font-SatoshiRegular',
-})
 
-const SatoshiMedium = localFont({
-  src: '../public/Satoshi-Medium.woff2',
-  display: 'swap',
-  weight: '500',
-  variable: '--font-SatoshiMedium ',
-})
-
-const SatoshiBold = localFont({
-  src: '../public/Satoshi-Bold.woff2',
-  display: 'swap',
-  weight: '700',
-  variable: '--font-SatoshiBold'
-})
 
 
 const Satoshi = localFont({

@@ -1,28 +1,11 @@
 
-/*@font-face {
-  font-family: "Monument Extended";
-  src: url("/MonumentExtended-Regular.woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Satoshi";
-  src: url("/Satoshi-Regular.woff2");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Satoshi";
-  src: url("/Satoshi-Medium.woff2");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Satoshi";
-  src: url("/Satoshi-Bold.woff2");
-  font-weight: 700;
-}*/
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
 
 
 body {
